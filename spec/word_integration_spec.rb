@@ -15,7 +15,7 @@ describe('Create, Update, and Delete', {:type => :feature}) do
 
   it('Updates the definition') do
     visit('/1')
-    click_button('Update')
+    click_button('Edit')
     fill_in('definition', :with => 'An exercise covering this weeks (and prior) lessons and concepts.')
     click_button('Confirm')
     visit('/1')
