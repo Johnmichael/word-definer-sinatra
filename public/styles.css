@@ -1,8 +1,8 @@
-.button{
+.button {
   margin: 10px;
 }
 
-.card{
+.card {
   padding: 5px;
   margin-top: 15px;
   color: linen;
@@ -10,6 +10,6 @@
   max-width: 400px;
 }
 
-body{
-  padding: 15px;
+body {
+  padding: 35px;
 }

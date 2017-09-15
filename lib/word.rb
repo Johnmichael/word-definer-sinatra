@@ -22,7 +22,6 @@ class Word
 
   def self.search(id)
     search_id = id.to_i
-
     @@list.each do |word|
       if search_id == word.id
         return word
@@ -46,7 +45,6 @@ class Word
         word.definition = definition
         word.example = example
       end
-
     end
   end
 end
