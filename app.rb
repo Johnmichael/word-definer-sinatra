@@ -47,6 +47,5 @@ post('/update/:id') do
   example = params["example"]
 
   Word.update(@word.id, name, definition, example)
-  redirect '/'
   erb(:update)
 end
