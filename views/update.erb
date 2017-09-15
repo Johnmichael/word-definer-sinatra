@@ -1,0 +1,16 @@
+<div class="card" style="background-color: #333; border-color: #333;">
+  <div class="card-block">
+    <h2 class="word-title"><%= @word.name %></h2><br>
+    <h3 class"word-definition"><%= @word.definition %></h3>
+  </div>
+</div>
+
+<h2>Update</h2>
+<form class="" action="/update/<%= @word.id %>" method="post">
+  <label>definition</label>
+  <input type="text" name="definition" value="">
+  <button class="button" type="submit" name="button">Confirm</button>
+</form>
+<form class="button" action="/" method="get">
+  <button type="submit" name="button">Home</button>
+</form>
