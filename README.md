@@ -9,7 +9,7 @@ Code Review:  _An exercise covering this weeks (and prior) lessons and concepts.
 
 The app will allow the user to write up a list of words they don't know, (but would like to learn) and then come up with their definition.
 
-This program will be deployed on [Heroku](https://placeholder) and also should be available on [GitHub Pages](https://placeholder).
+This program will be available on [Heroku](https://mighty-cove-56248.herokuapp.com/).
 
 
 ## Specifications
@@ -50,12 +50,12 @@ This program will be deployed on [Heroku](https://placeholder) and also should b
 ## Built With
 #### Languages & Frameworks
 
-- [Ruby](https://placeholder) - Development
-    - [Sinatra](https://placeholder)
+- [Ruby](https://www.ruby-lang.org/en/) - Development
+    - [Sinatra](http://www.sinatrarb.com/)
 
 
-- [CSS](https://placeholder) - Front End Design
-  - [Bootstrap](https://placeholder)
+- CSS - Front End Design
+  - [Bootstrap](http://getbootstrap.com/)
 
 #### Resources
 
