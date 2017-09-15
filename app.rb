@@ -44,8 +44,9 @@ post('/update/:id') do
 
   name = params["name"]
   definition = params["definition"]
+  example = params["example"]
 
-  Word.update(@word.id, name, definition)
+  Word.update(@word.id, name, definition, example)
   redirect '/'
   erb(:update)
 end
