@@ -2,36 +2,38 @@ class Word
 
   @@list = []
 
+  attr_accessor :name, :definition
+  attr_reader :id
 
-def initialize(word_hash)
-  @name = word_hash["name"]
-  @definition = word_hash["definition"]
-  @id = @@list.length +1
-end
+  def initialize(word_hash)
+    @name = word_hash["name"]
+    @definition = word_hash["definition"]
+    @id = @@list.length +1
+  end
 
-def self.all()
-  @@list
-end
+  def self.all()
+    @@list
+  end
 
-def save()
-  @@list.push(self)
-end
+  def save()
+    @@list.push(self)
+  end
 
-def self.remove(id)
-  @@list.map do |word|
-    if word.id == id
-      word.name = ""
-      word.definition = ""
+  def self.remove(id)
+    @@list.map do |word|
+      if word.id == id
+        word.name = ""
+        word.definition = ""
+      end
     end
   end
-end
 
-def self.update(id, name, definition)
-  @@list.map do |word|
-    if word.id == id
-      word.name = name
-      word.definition = definition
+  def self.update(id, name, definition)
+    @@list.map do |word|
+      if word.id == id
+        word.name = name
+        word.definition = definition
+      end
     end
   end
-end
 end
