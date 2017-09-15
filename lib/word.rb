@@ -8,7 +8,7 @@ class Word
   def initialize(word_hash)
     @name = word_hash["name"]
     @definition = word_hash["definition"]
-    @id = @@list.length +1
+    @id = @@list.length+1
   end
 
   def self.all()
@@ -17,6 +17,16 @@ class Word
 
   def save()
     @@list.push(self)
+  end
+
+  def self.search(id)
+    search_id = id.to_i
+
+    @@list.each do |word|
+      if search_id == word.id
+        return word
+      end
+    end
   end
 
   def self.remove(id)
@@ -31,7 +41,6 @@ class Word
   def self.update(id, name, definition)
     @@list.map do |word|
       if word.id == id
-        word.name = name
         word.definition = definition
       end
     end
