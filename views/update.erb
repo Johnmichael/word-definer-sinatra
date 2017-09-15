@@ -8,12 +8,15 @@
 </div>
 
 <h2>Update</h2>
-<form class="" action="/update/<%= @word.id %>" method="post">
-  <label>Definition</label>
-  <input type="text" name="definition" value="">
-  <button class="button" type="submit" name="button">Confirm</button>
-</form>
+<div class="row">
+  <form class="" action="/update/<%= @word.id %>" method="post">
+    <label>Definition</label>
+    <input type="text" name="definition" value="">
+    <button class="button" type="submit" name="button">Confirm</button>
+  </form>
 
-<form class="button" action="/" method="get">
-  <button type="submit" name="button">Home</button>
-</form>
+  <form class="button" action="/" method="get">
+    <button type="submit" name="button">Home</button>
+  </form>
+
+</div>
