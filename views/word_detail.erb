@@ -2,7 +2,6 @@
   <div class="card-block">
     <h2><strong><%= @word.name %></strong></h2><br>
     <h3><%= @word.definition %></h3><br>
-    <h4>Example:</h4>
     <p><em><%=@word.example%></em></p>
   </div>
 </div>
@@ -15,6 +14,6 @@
     <button type="submit" name="button">Home</button>
   </form>
   <form class="button" action="/update/<%=@word.id%>" method="get">
-    <button type="submit" name="button">Update</button>
+    <button type="submit" name="button">Edit</button>
   </form>
 </div>
