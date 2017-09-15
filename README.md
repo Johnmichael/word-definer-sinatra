@@ -17,7 +17,7 @@ This program will be deployed on [Heroku](https://placeholder) and also should b
 - User inputs string of text, program checks if string is already defined, if true asks user if they would like to add to or change the definition. if false, User selects if the string is a noun, verb, adjective, or unknown.
 
   - Example Input: "nohaj" - UserSelect: Verb.
-  - Example Output: 'nohaj' -> (False, Undefined) -> Nohaj - _(adjective)_ - _Undefined_
+  - Example Output: 'nohaj' -> (False, Undefined) -> Nohaj - _(verb)_ - _Undefined_
 
   - Example Input: "kupcha"
   - Example Output: (True, Defined) "Kupcha is already a word, would you like to change something about it instead?"
@@ -41,7 +41,7 @@ This program will be deployed on [Heroku](https://placeholder) and also should b
 - User inputs string of defined word to search for it, if true the word will be displayed along with it's definition. If false, and empty page is displayed asking if the user would like to re-search or define this word instead.
 
   - Example Input: "code review"
-  - Example Output: Code Review :_ An exercise covering this weeks (and prior) lessons and concepts._
+  - Example Output: Code Review : _An exercise covering this weeks (and prior) lessons and concepts._
 
   - Example Input: "turbo-nerd"
   - Example Output: "Hmm, I can't find "Turbo-nerd" anywhere..[Let's fix that!](Link to word input page with 'userInput' as the entry)"
