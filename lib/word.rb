@@ -1,14 +1,14 @@
 class Word
 
   @@list = []
-  attr_accessor :name, :definition, :example, :extra
+
+  attr_accessor :name, :definition, :example
   attr_reader :id
 
   def initialize(word_hash)
     @name = word_hash["name"]
-    @definition = []
+    @definition = word_hash["definition"]
     @example = word_hash["example"]
-    @extra = word_hash["extra"]
     @id = @@list.length+1
   end
 
@@ -16,8 +16,8 @@ class Word
     @@list
   end
 
-  def self.add_definition(id, definition)
-    Word.search(id).definition.push(definition)
+  def self.empty()
+    @@list = []
   end
 
   def save()
@@ -43,13 +43,12 @@ class Word
     end
   end
 
-  def self.update(id, name, definition, extra, example)
+  def self.update(id, name, definition, example)
     @@list.map do |word|
       if word.id == id
-        word.extra = extra
+        word.definition = definition
         word.example = example
       end
     end
   end
-
 end
