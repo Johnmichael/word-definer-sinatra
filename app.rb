@@ -13,7 +13,7 @@ post('/') do
   name = params["name"]
   definition = params["definition"]
 
-  word_hash = {"name" => name, "definition" => definition}
+  word_hash = {"name" => name}
 
   word = Word.new(word_hash)
   word.save
@@ -23,6 +23,7 @@ end
 
 get('/:id') do
   @word = Word.search(params[:id])
+  definition = params['definition']
   erb(:word_detail)
 end
 
@@ -43,9 +44,9 @@ post('/update/:id') do
   @word = Word.search(params[:id])
 
   name = params["name"]
-  definition = params["definition"]
+  extra = params["extra"]
   example = params["example"]
 
-  Word.update(@word.id, name, definition, example)
+  Word.update(@word.id, name, extra, example)
   erb(:update)
 end
